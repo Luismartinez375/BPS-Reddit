@@ -2,6 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import CardItem, { ICardItem } from './cardIem';
 import { mockCardItemProps } from './cardItem.mocks';
 
+
 const meta: Meta<typeof CardItem> = {
   component: CardItem,
 };

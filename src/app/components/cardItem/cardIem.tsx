@@ -8,8 +8,11 @@ import upVote from "public/upvote.svg";
 import pressedUpvode from 'public/upvotePressed.svg';
 import { useState } from "react";
 
+export interface ICardItem {
+  sampleTextProp: string;
+}
 
-export default function CardItem() {
+export default function CardItem({ sampleTextProp }: ICardItem) {
   const [upvoted, setUpvoted] = useState(false)
   const [upvoteCount, setUpvoteCount] = useState(0)
   const upvote = () => {

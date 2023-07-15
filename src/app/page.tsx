@@ -9,7 +9,7 @@ export default function Home() {
 
       </div>
       </div>
-      <CardItem/>
+      <CardItem sampleTextProp=""/>
     </main>
   );
 }
