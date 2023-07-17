@@ -1,5 +1,5 @@
 import { Post, Posts } from "../../types";
-import getData from "./api/route";
+import getData from "./api/getPosts";
 import CardItem from "./components/cardItem/cardIem";
 export default async function Home() {
    
