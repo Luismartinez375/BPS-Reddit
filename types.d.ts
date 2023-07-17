@@ -1,22 +1,27 @@
+import { Serializable } from "ts-jackson";
+
+@Serializable()
 type Post = {
     url: string;
     thumbnail: string;
     author: string;
-    media_metadata: any;
+    mediaMetadata?: any;
     title: string;
     data: {
         title: string;
         author: string;
         thumbnail: string;
         url: string;
-        media_metadata?: str
+        mediaMetadata?: any
 
 
     }
 }
-
 type Posts = {
     data: Post[];
 }
 
-export type { Post, Posts };
+
+
+    export type { Post, Posts };
+
