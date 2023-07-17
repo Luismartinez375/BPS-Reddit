@@ -1,8 +1,8 @@
-
+import { Post, Posts } from "../../../types";
 
 const DATA_SOURCE = "https://www.reddit.com/r/androiddev.json"
 
-export default async function GET() {
+export default async function getData() {
     
     try {
         const response = await fetch(DATA_SOURCE);
@@ -29,4 +29,4 @@ export default async function GET() {
       } catch (error) {
         console.error('Request failed:', error);
       }
-    };
+    }

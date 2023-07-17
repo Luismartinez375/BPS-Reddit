@@ -1,9 +1,9 @@
-import GET from "./api/route";
+import { Post, Posts } from "../../types";
+import getData from "./api/route";
 import CardItem from "./components/cardItem/cardIem";
-
 export default async function Home() {
    
-  let postlist: Posts | undefined= await GET()
+  let postlist: Posts | undefined= await getData()
   let posts = JSON.parse(JSON.stringify(postlist))
   console.log(posts)
   

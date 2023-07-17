@@ -8,6 +8,7 @@ import share from "public/share.svg";
 import upVote from "public/upvote.svg";
 import pressedUpvode from 'public/upvotePressed.svg';
 import { useState } from "react";
+import { Post } from "../../../../types";
 
 export interface ICardItem {
   sampleTextProp: string;
