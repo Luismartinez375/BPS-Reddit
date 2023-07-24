@@ -48,7 +48,13 @@ export default function CardItem(prop: PostClass, link: string) {
           {/* THUMBNAIL HERE */}
           <Image
             className=" inline-block h-8 w-8 rounded-full ring-1 ring-black"
-            src={prop.thumbnail !== 'self' ? prop.thumbnail : ruby}
+            src={
+              prop.thumbnail &&
+              prop.thumbnail !== 'self' &&
+              prop.thumbnail.startsWith('http')
+                ? prop.thumbnail
+                : ruby
+            }
             width={25}
             height={25}
             onError={() => {
@@ -76,7 +82,13 @@ export default function CardItem(prop: PostClass, link: string) {
         // IMAGE HERE
         width={800}
         height={800}
-        src={prop.thumbnail !== 'self' ? prop.thumbnail : bears}
+        src={
+          prop.thumbnail &&
+          prop.thumbnail !== 'self' &&
+          prop.thumbnail.startsWith('http')
+            ? prop.thumbnail
+            : bears
+        }
         alt=""
       ></Image>
       <div className=" flex flex-row px-8 gap-8 text-xs">
